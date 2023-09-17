@@ -1,2 +1,2 @@
 # ongaku-play
-A web-based music player that finds songs and playlists from YouTube and plays them.
+A web-based music player that streams songs and playlists from YouTube, ad-free.
