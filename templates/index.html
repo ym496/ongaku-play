@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+	<div class="container">
+        <div class="left-pane">
+	<div id="song-queue">
+	</div>
+	<div class="audio-container">
+	<audio id="audio-player" controls > 
+		<source id="audio-source" src="" type="audio/mpeg">
+		</audio>
+	</div>
+	<div id="popup" class="popup">
+		<span id="popupText"></span>
+	</div>
+	</div>
+        <div class="right-pane">
+		<div class="search-container">
+    <input type="text" id="search-input" placeholder="Search for songs">
+    <button class="search-button"><i class="search-icon">🔍</i>Search</button>
+  </div>	
+		<div class="chats" id="chat-container">
+		</div>
+	</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="{{ url_for('static', filename='auto-play.js') }}"></script>
+
+</body>
+
+
+</html>
+
+
